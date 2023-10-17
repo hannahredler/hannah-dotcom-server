@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx ts-node-dev app.ts",
     "debug": "ts-node-dev --respawn --transpile-only --inspect=9230 app.ts",
-    "start": "node --inspect-brk -r ts-node/register app.ts"
+    "start": "node dist/app.js",
+    "build": "tsc"
   },
   "author": "Hannah Redler",
   "license": "ISC",

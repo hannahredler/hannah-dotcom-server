@@ -8,7 +8,7 @@
     "dev": "npx ts-node-dev app.ts",
     "debug": "ts-node-dev --respawn --transpile-only --inspect=9230 app.ts",
     "start": "node dist/app.js",
-    "build": "tsc"
+    "build": "npm i && tsc"
   },
   "author": "Hannah Redler",
   "license": "ISC",

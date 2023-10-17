@@ -1,7 +1,7 @@
 require("dotenv").config({ path: __dirname + "/.env" });
 
 import express from "express";
-import { parseBodyAsJson, validateBody } from "./validators";
+import { parseBodyAsJson, validateBody } from "./middleware/validators";
 
 const emailController = require("./controllers/EmailController");
 const app = express();

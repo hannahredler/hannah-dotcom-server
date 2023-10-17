@@ -1,0 +1,28 @@
+{
+  "name": "hannah-dotcom-server",
+  "version": "1.0.0",
+  "description": "Server for hannah dotcom",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx ts-node-dev app.ts",
+    "debug": "ts-node-dev --respawn --transpile-only --inspect=9230 app.ts",
+    "start": "node --inspect-brk -r ts-node/register app.ts"
+  },
+  "author": "Hannah Redler",
+  "license": "ISC",
+  "dependencies": {
+    "@types/nodemailer": "^6.4.11",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.5"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.3",
+    "@types/express": "^4.17.18",
+    "@types/node": "^20.8.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}
